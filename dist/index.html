@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind css tuts | Game Pulse</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="text-gray-300 bg-gray-900 capitalize font-sans flex flex-col min-h-screen">
+    <!-- Fixed Header -->
+    <header
+        class="fixed top-0 left-0 w-full bg-gray-900 z-50 py-5 px-10 flex justify-between items-center border-b border-gray-700">
+        <div class="flex items-center gap-4">
+            <button id="menu-btn" class="text-yellow-500 text-2xl focus:outline-none">
+                ☰
+            </button>
+            <div class="title">
+                <div class="main-title text-4xl font-bold text-white">Games</div>
+
+                <div class="sub-title text-2xl font-semibold text-green-500">For Gamers</div>
+            </div>
+        </div>
+        <div class="user flex gap-5">
+            <a href="login.html" class="font-semibold text-yellow-500 hover:text-yellow-400">Log in</a>
+            <a href="sign up.html" class="font-semibold text-yellow-500 hover:text-yellow-400">Sign up</a>
+        </div>
+    </header>
+
+
+
+    <div class="flex flex-1 pt-24">
+        <!-- Sidebar -->
+        <div id="sidebar"
+            class="sidebar w-64 bg-gray-800 text-white flex flex-col items-center py-6 fixed h-full transform -translate-x-full transition-transform duration-300 ease-in-out z-40">
+            <div class="title text-2xl font-bold text-yellow-500 mb-10">
+                <span class="text-white">X</span> GamePulse
+            </div>
+            <div class="links flex flex-col gap-4 w-full px-4">
+                <a href="index.html"
+                    class="flex items-center gap-3 text-gray-100 font-semibold py-3 px-4 rounded-lg hover:bg-yellow-500 hover:text-gray-900 transition">
+                    <span class="icon">🏠</span>
+                    <span>Home</span>
+                </a>
+                <a href="Abuot.html"
+                    class="flex items-center gap-3 text-gray-100 font-semibold py-3 px-4 rounded-lg hover:bg-yellow-500 hover:text-gray-900 transition">
+                    <span class="icon">ℹ️</span>
+                    <span>About</span>
+                </a>
+                <a href="contact.html"
+                    class="flex items-center gap-3 text-gray-100 font-semibold py-3 px-4 rounded-lg hover:bg-yellow-500 hover:text-gray-900 transition">
+                    <span class="icon">📞</span>
+                    <span>Contact us</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div id="main-container" class="main-container w-full px-10 py-5 transition-all duration-300">
+            <div class="games">
+                <section class="mt-7">
+                    <div class="title text-3xl font-bold text-yellow-500 py-5 border-b-2 border-yellow-500">Latest Games
+                    </div>
+                    <div class="cards grid grid-cols-3 gap-6 mt-5">
+                        <div class="card h-72 w-full overflow-hidden relative rounded-lg shadow-lg">
+                            <a href="https://store.steampowered.com/agecheck/app/1716740/" target="_blank"><img
+                                    src="./dist/img/image.png" class="h-full w-full object-cover" alt="Starfield"> </a>
+                            <div class="title absolute bottom-0 bg-gray-700 bg-opacity-70 w-full py-2 px-3">
+                                <div class="main-title font-bold text-white">Starfield</div>
+                                <div class="sub-title text-sm text-gray-300">Starfield is the first new universe in 25
+                                    years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V:
+                                    Skyrim and Fallout 4</div>
+                            </div>
+
+
+
+
+
+
+                            <div
+                                class="badge absolute top-2 left-2 text-sm font-semibold bg-black bg-opacity-50 text-yellow-500 px-3 py-1 rounded-full">
+                                <span class="icon text-3xl">*</span> <!--نجوم احتياطيه لحد ما اعملها ايقونه-->
+                                <span class="text"> 4.6/5</span>
+                            </div>
+                        </div>
+                        <div class="card h-72 w-full overflow-hidden relative rounded-lg shadow-lg ">
+                            <a href="https://store.steampowered.com/app/990080/Hogwarts_Legacy/" target="_blank"><img
+                                    src="./dist/img/hogwarts.png" class="h-full w-full object-cover"
+                                    alt="Hogwarts Legacy"> </a>
+                            <div class="title absolute bottom-0 bg-gray-700 bg-opacity-70 w-full py-2 px-3">
+                                <div class="main-title font-bold text-white">Hogwarts Legacy</div>
+                                <div class="sub-title text-sm text-gray-300">Experience the wizarding world in an
+                                    unexplored era to uncover a hidden truth from its past. Battle against trolls, Dark
+                                    Wizards, goblins, and more</div>
+                            </div>
+                            <div
+                                class="badge absolute top-2 left-2 text-sm font-semibold bg-black bg-opacity-50 text-yellow-500 px-3 py-1 rounded-full">
+                                <span class="icon text-3xl">*</span> <!--نجوم احتياطيه لحد ما اعملها ايقونه-->
+                                <span class="text"> 4.7/5</span>
+                            </div>
+                        </div>
+                        <div class="card h-72 w-full overflow-hidden relative rounded-lg shadow-lg">
+                            <a href="https://store.steampowered.com/agecheck/app/1086940/" target="_blank"><img
+                                    src="./dist/img/Baldur's Gate 3.png" class="h-full w-full object-cover"> </a>
+                            alt="Baldur's Gate 3">
+                            <div class="title absolute bottom-0 bg-gray-700 bg-opacity-70 w-full py-2 px-3">
+                                <div class="main-title font-bold text-white">Baldur's Gate 3</div>
+                                <div class="sub-title text-sm text-gray-300">Baldur's Gate 3 is a story-rich,
+                                    party-based RPG set in the universe of Dungeons & Dragons, where your choices shape
+                                    a tale of fellowship and betrayal, ...
+                                </div>
+                            </div>
+                            <div
+                                class="badge absolute top-2 left-2 text-sm font-semibold bg-black bg-opacity-50 text-yellow-500 px-3 py-1 rounded-full">
+                                <span class="icon text-3xl">*</span> <!--نجوم احتياطيه لحد ما اعملها ايقونه-->
+                                <span class="text"> 4.7/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mt-7">
+                    <div class="title text-3xl font-bold text-yellow-500 py-5 border-b-2 border-yellow-500">Most Popular
+                    </div>
+                    <div class="cards grid grid-cols-3 gap-6 mt-5">
+                        <div class="card h-72 w-full overflow-hidden relative rounded-lg shadow-lg">
+                            <a href="https://store.steampowered.com/app/2322010/God_of_War_Ragnark/"
+                                target="_blank"><img src="./dist/img/God of War Ragnarök.jpg"
+                                    class="h-full w-full object-cover"></a>
+                            alt="God of War Ragnarök">
+                            <div class="title absolute bottom-0 bg-gray-700 bg-opacity-70 w-full py-2 px-3">
+                                <div class="main-title font-bold text-white">God of War Ragnarök</div>
+                                <div class="sub-title text-sm text-gray-300">God of War Ragnarök is an action-adventure
+                                    game where players take the role of Kratos and his son as they embark on a quest to
+                                    prevent the coming of Ragnarök.
+                                </div>
+                            </div>
+                            <div
+                                class="badge absolute top-2 left-2 text-sm font-semibold bg-black bg-opacity-50 text-yellow-500 px-3 py-1 rounded-full">
+                                <span class="icon text-3xl">*</span> <!--نجوم احتياطيه لحد ما اعملها ايقونه-->
+                                <span class="text"> 4.9/5</span>
+                            </div>
+                        </div>
+                        <div class="card h-72 w-full overflow-hidden relative rounded-lg shadow-lg">
+                            <a href="https://www.playstation.com/ar-sa/games/marvels-spider-man-2/" target="_blank"><img
+                                    src="./dist/img/saleh.png" class="h-full w-full object-cover" alt="Spider-Man 2">
+                            </a>
+                            <div class="title absolute bottom-0 bg-gray-700 bg-opacity-70 w-full py-2 px-3">
+                                <div class="main-title font-bold text-white">Spider-Man 2</div>
+                                <div class="sub-title text-sm text-gray-300">Swing, jump, and utilize the new Web Wings
+                                    to travel across the city, switching between Peter Parker and Miles Morales in open
+                                    world exploration to experience ...
+                                </div>
+                            </div>
+                            <div
+                                class="badge absolute top-2 left-2 text-sm font-semibold bg-black bg-opacity-50 text-yellow-500 px-3 py-1 rounded-full">
+                                <span class="icon text-3xl">*</span> <!--نجوم احتياطيه لحد ما اعملها ايقونه-->
+                                <span class="text"> 4.8/5</span>
+                            </div>
+                        </div>
+                        <div class="card h-72 w-full overflow-hidden relative rounded-lg shadow-lg">
+                            <a href="https://www.residentevil.com/re4/en-asia/" target="_blank"><img
+                                    src="./dist/img/resident.png" class="h-full w-full object-cover"></a>
+                            alt="Resident Evil 4 Remake">
+                            <div class="title absolute bottom-0 bg-gray-700 bg-opacity-70 w-full py-2 px-3">
+                                <div class="main-title font-bold text-white">Resident Evil 4 Remake</div>
+                                <div class="sub-title text-sm text-gray-300">Featuring modernized gameplay, a reimagined
+                                    storyline, and vividly detailed graphics, Resident Evil 4 marks the rebirth of an
+                                    industry juggernaut. Relive the ...
+                                </div>
+                            </div>
+                            <div
+                                class="badge absolute top-2 left-2 text-sm font-semibold bg-black bg-opacity-50 text-yellow-500 px-3 py-1 rounded-full">
+                                <span class="icon text-3xl">*</span> <!--نجوم احتياطيه لحد ما اعملها ايقونه-->
+                                <span class="text"> 4.6/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div
+                    class="load-more text-xl font-semibold text-gray-900 bg-yellow-500 hover:bg-yellow-400 px-6 py-3 mt-8 flex justify-center rounded-lg cursor-pointer transition">
+                    Load More
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-10">
+            <div class="grid grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-500 mb-4">Game Pulse</h3>
+                    <p class="text-sm">Your ultimate gaming destination. Discover the latest games and join our
+                        community of gamers.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-500 mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-yellow-500 transition">Home</a></li>
+                        <li><a href="Abuot.html" class="hover:text-yellow-500 transition">About</a></li>
+                        <li><a href="contact.html" class="hover:text-yellow-500 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-500 mb-4">Contact Us</h3>
+                    <p class="text-sm">Email: support@GamePulse.com</p>
+                    <p class="text-sm">Phone: +01015997554</p>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm border-t border-gray-700 pt-4">
+                © 2025 GamePulse. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        const mainContainer = document.getElementById('main-container');
+
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('-translate-x-full');
+            if (sidebar.classList.contains('-translate-x-full')) {
+                mainContainer.style.marginLeft = '0';
+            } else {
+                mainContainer.style.marginLeft = '16rem';
+            }
+        });
+    </script>
+</body>
+
+</html>
